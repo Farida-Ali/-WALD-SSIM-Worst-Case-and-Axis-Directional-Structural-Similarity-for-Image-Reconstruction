@@ -1,14 +1,5 @@
 """
-SSIM Extension Paper — Experiments aligned with PAPER constants.
-Uses the EXACT formulation from the paper appendix:
-  - intensity range [0,255]
-  - C1 = 6.5025  = (0.01*255)^2
-  - C2 = 58.5225 = (0.03*255)^2
-This guarantees the published numbers match the published code.
-
-Baselines (SSIM, MS-SSIM, FSIM, IW-SSIM) are computed with the
-standard skimage / piq implementations on the SAME [0,255] images,
-converted as those libraries require.
+SSIM Extension Paper 
 """
 
 import numpy as np
