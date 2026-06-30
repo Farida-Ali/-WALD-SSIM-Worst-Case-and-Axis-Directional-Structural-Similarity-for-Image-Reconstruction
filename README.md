@@ -32,8 +32,7 @@ baselines for comparison.
 |---|---|
 | `ssim_experiments_paper.py` | Metric-sensitivity analysis (Table I, Fig. 3) and denoising evaluation (Table IV, Fig. 5) |
 | `directional_ablation.py` | Directional-artifact validation (Table II, Fig. 4) and component ablation (Table III) |
-| `make_teaser.py` | Teaser / concept figure (Fig. 1) |
-| `make_ga.py` | Graphical abstract (`gagraphic.jpg`) |
+
 
 Run any script directly, for example:
 
@@ -63,24 +62,8 @@ corresponding scores (1 − loss) so that higher values mean greater similarity.
 The worst-case score can be negative when a patch SSIM is negative, which
 signals a severely degraded local region.
 
-## Differentiable loss (optional)
 
-`wald_losses.py` provides a differentiable PyTorch implementation of the four
-WALD-SSIM components, validated to match the NumPy metric to within
-floating-point precision. It is a reference implementation for using WALD-SSIM
-as a training objective (noted as future work in the paper) and is **not** used
-to produce any result reported in the manuscript.
 
-## Citation
-
-```bibtex
-@article{belhaouari2025waldssim,
-  title   = {{WALD-SSIM}: Worst-Case and Axis-Directional Structural Similarity for Image Reconstruction},
-  author  = {Belhaouari, Samir Brahim and Mohsen, Farida},
-  journal = {IEEE Signal Processing Letters},
-  year    = {2025}
-}
-```
 
 ## License
 
